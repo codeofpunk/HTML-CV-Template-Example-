@@ -2,7 +2,6 @@
     height: 200px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px 0px #a1a1a1;
 }
 
 .headParagraf {
@@ -12,9 +11,61 @@
     padding-bottom: 15px;
 }
 
-.headParagraf h3 {
-    color: #444;
-}
+    .headParagraf h3 {
+        color: #444;
+    }
+
     .headParagraf h5 {
         color: #1B9CFC;
     }
+
+.headBar {
+    margin-top: 20px;
+    height: 40px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.golge {
+    box-shadow: 0px 0px 20px 0px #d9d7d7;
+}
+
+.headBar i {
+    font-size: 22px !important;
+    margin-right: 2px;
+    margin-left: 35px;
+    line-height: 41px;
+    color: #444 !important;
+}
+
+.headBar a {
+    margin-top: 20px;
+    margin-left: 5px;
+    color: #444 !important;
+}
+
+.sertifikalar {
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 25px;
+}
+
+.sertifikalar h4 {
+    padding-top: 15px;
+}
+
+.sertifikalar i {
+    padding-right: 5px;
+    color: #1b9cfc;
+}
+
+.sertifikalar i,a {
+    padding-bottom: 15px;
+}
+
+.yetenekler {
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+}
