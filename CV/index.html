@@ -9,26 +9,30 @@
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/main.css" rel="stylesheet" />
     <link href="Content/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="Content/animate.min.css"  />
-    
+    <link rel="stylesheet" href="Content/animate.min.css" />
+
 </head>
 <body>
-<br/>
+    <br />
 <div class="container">
     <div class="row">
 
-        <div class="col-md-3 animate__animated animate__backInDown">
+        <div class="col-md-3 col-sm-12 animate__animated animate__backInDown">
             <!-- Header sol, fotoğraf alanı.-->
-            <img class="head golge img-fluid" src="Images/profile.png" />
+            <img class="headFoto golge img-fluid" src="Images/profile.png" />
         </div>
+        
 
-        <div class="col-md-9 animate__animated animate__backInDown">
+        <div class="col-md-9 col-sm-12 animate__animated animate__backInDown">
             <!-- Header sağ, hakkımda alanı.-->
             <div class="head golge">
                 <div class="headParagraf">
                     <h3>Başlık</h3>
                     <h5>Software Engineer</h5>
                     <p style="font-size: 15px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s.</p>
+                    <button type="button" class="btn btn-primary btn-sm yetenekBtn"><i class="fa fa-flag"></i> Askerlik Durumu: Yapıldı</button>
+                    <button type="button" class="btn btn-primary btn-sm yetenekBtn"><i class="fa fa-motorcycle"></i> Ehliyet: A2</button>
+                    <button type="button" class="btn btn-primary btn-sm yetenekBtn"><i class="fa fa-road"></i> Seyahat Engeli: Yok</button>
                 </div>
             </div>
         </div>
@@ -80,7 +84,7 @@
             </div>
         </div>
     </div>
-    <br/>
+    <br />
     <div class="row animate__animated animate__backInDown animate__delay-3s">
         <div class="col-md-8">
             <div class="egitimler golge">
@@ -99,7 +103,7 @@
             <div class="yetenekler golge">
                 <h4>Hobiler</h4>
 
-                <button type="button" class="btn btn-primary btn-sm yetenekBtn"><i class="fa fa-music"></i> Müzik</button>
+                <button id="test" type="button" class="btn btn-primary btn-sm yetenekBtn"><i class="fa fa-music"></i> Müzik</button>
                 <button type="button" class="btn btn-primary btn-sm yetenekBtn"><i class="fa fa-book"></i> Kitap Okumak</button>
                 <button type="button" class="btn btn-primary btn-sm yetenekBtn"><i class="fa fa-soccer-ball-o"></i> Futbol</button>
 
@@ -114,7 +118,16 @@
             </div>
         </div>
     </div>
-    
+
 </div>
+
 </body>
+<script>
+    $(function() {                       //run when the DOM is ready
+        $("button").click(function() {  //use a class, since your ID gets mangled
+            $(this).addClass("animate__animated animate__hinge");      //add the class to the clicked element
+        });
+    });
+</script>
+
 </html>

@@ -5,7 +5,12 @@
 }
 
 .head {
-    height: 200px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.headFoto {
     background-color: white;
     border-radius: 20px;
 }
@@ -15,6 +20,10 @@
     padding-right: 35px;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.headParagraf p {
+    padding-bottom: 10px;
 }
 
     .headParagraf h3 {
@@ -110,4 +119,31 @@
     float: right;
     margin-right: 20px;
     color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    .headBar {
+        display: none !important;
+    }
+
+    .sertifikalar {
+        margin-bottom: 20px;
+    }
+
+    .headFoto {
+        margin-bottom: 20px;
+    }
+
+    .egitimler span {
+        float: none;
+    }
+
+    .egitimler {
+        margin-bottom: 20px;
+    }
+
+    .yetenekler {
+        margin-bottom: 20px;
+    }
 }
